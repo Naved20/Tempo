@@ -59,10 +59,11 @@
         .logo img {
             height: 50px;
             margin-right: 10px;
+            border-radius: 50%;
         }
 
         .logo h1 {
-            color: var(--primary-color);
+            color: white;
             font-size: 24px;
             font-weight: 700;
         }
@@ -81,7 +82,7 @@
         }
 
         nav ul li a {
-            color: var(--text-color);
+            color: #f39c12;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -90,7 +91,7 @@
         }
 
         nav ul li a:hover {
-            color: var(--primary-color);
+            color:  #f39c12;
         }
 
         nav ul li a::after {
@@ -100,7 +101,7 @@
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: var(--primary-color);
+            background-color:  #f39c12;
             transition: width 0.3s ease;
         }
 
@@ -114,8 +115,10 @@
             border: none;
             cursor: pointer;
             font-size: 24px;
-            color: var(--primary-color);
+            color: white;
+         
         }
+       
 
         /* Hero Section */
         .hero {
@@ -363,96 +366,7 @@
         }
 
        
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: var(--white);
-            padding: 50px 0 20px;
-        }
-
-        .footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
-
-        .footer-col {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 30px;
-            padding: 0 15px;
-        }
-
-        .footer-col h3 {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            position: relative;
-        }
-
-        .footer-col h3::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 2px;
-            background-color: var(--accent-color);
-            margin-top: 10px;
-        }
-
-        .footer-col p {
-            margin-bottom: 15px;
-            color: #bbb;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--white);
-        }
-
-        .social-links {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #444;
-            color: var(--white);
-            margin-right: 10px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            background-color: var(--primary-color);
-            transform: translateY(-3px);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-            font-size: 0.9rem;
-            color: #bbb;
-        }
+      
 
         /* Media Queries */
         @media (max-width: 992px) {
@@ -474,6 +388,8 @@
                 display: block;
             }
 
+            
+       
             nav {
                 position: absolute;
                 top: 100%;
@@ -517,44 +433,87 @@
             }
         }
 
-        @media (max-width: 576px) {
-            .logo h1 {
-                font-size: 20px;
-            }
 
-            .logo img {
-                height: 40px;
-            }
 
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-
-            .service-card {
-                margin-bottom: 20px;
-            }
-
-            .form-container {
-                padding: 20px;
-            }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 0 20px;
         }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-col h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #3498db;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #3498db;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+        
+
+      
     </style>
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header  style=" background: linear-gradient(135deg, #3498db, #1a5276);">
         <div class="container header-container">
             <div class="logo">
                 <img src="https://media-hosting.imagekit.io//d4464b49c8b443c5/%F0%9F%93%9D_20250319_163133_0000.jpg?Expires=1837043458&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Ota3BjRAH58NTxKrvVKc~M~T9zy4GHQVOCVxNx1bLwzQJBo9xsDtPb89x9675-0DRGnlFY7gN4zm-8WWn2KaB2cajQsYvycv1tlLl~xG3cBqE9XCe2VknsBjqbGtWoJLMVMWaT4B7bObbnc-fXcmvqq8yiknGTSW-~ZIofTMyGVe1rKKgiPx1wPFC9DZAh7K3-wQktrlw1d9~Z4w7Hs75-YDoP26iToxh3bockPnagzxnrk60x5XIIeLJtOtlZy8E5zyoYVhqKCmutfiz5wXd6n9zq7JSr88F9SVeN5qwfAOhV7hq2wwRPxcju7Q-WIOozdhAD8u9xwvrOWkxfczag__" alt="Dastawez Logo">
                 <h1>Dasta<span>wez</span></h1>
             </div>
-            <button class="mobile-menu-btn" id="menuBtn">☰</button>
-            <nav id="mainNav">
+            <button  class="mobile-menu-btn" id="menuBtn">☰</button>
+            <nav  id="mainNav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#order">Order Now</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -564,8 +523,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h2>Instant Printing & Digital Services</h2>
-            <p>High-quality printing services delivered to your doorstep. Fast, reliable, and affordable solutions for all your printing needs.</p>
+            <h2>📢 Instant Printing & MP Online Services! 🚀            </h2>
+            <p>MP Online & Government Services delivered to your doorstep without any hassle. Fast, reliable, and affordable solutions for all your printing needs.</p> 
+
             <a href="#order" class="cta-btn">Order Now</a>
         </div>
     </section>
@@ -760,44 +720,45 @@
    <!-- Footer -->
    <footer>
     <div class="container">
-        <div class="footer-container">
+        <div class="footer-content">
             <div class="footer-col">
-                <h3>About Dastawez</h3>
-                <p>Dastawez is a premier printing and digital services provider, offering comprehensive document solutions with doorstep delivery. We revolutionize document services by bringing printing and MP Online government services directly to you.</p>
-                <div class="social-links">
-                    <a href="#"><i>f</i></a>
-                    <a href="#"><i>t</i></a>
-                    <a href="#"><i>in</i></a>
-                    <a href="#"><i>ig</i></a>
-                </div>
+                <h3>Dastawez</h3>
+                <p>Revolutionizing document services by bringing printing and MP Online government services directly to your doorstep.</p>
             </div>
             <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#resume-hub">Resume Hub</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>Our Services</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Document Printing</a></li>
-                    <li><a href="#">Photo Printing</a></li>
-                    <li><a href="#">Banner Printing</a></li>
-                    <li><a href="#">Business Cards</a></li>
-                    <li><a href="#">Digital Services</a></li>
-                    <li><a href="#">Resume Hub</a></li>
-                    <li><a href="#">MP Online Services</a></li>
+                    <li><a href="#printing-service">Printing Services</a></li>
+                    <li><a href="#mp-online">MP Online</a></li>
+                    <li><a href="#delivery">Doorstep Delivery</a></li>
+                    <li><a href="#resume-hub">Resume Creation</a></li>
                 </ul>
             </div>
+            <div class="footer-col">
+                <h3>We Serve</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Job Seekers</a></li>
+                    <li><a href="#">Businesses & Freelancers</a></li>
+                    <li><a href="#">General Public</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="copyright">
             <p>&copy; 2025 Dastawez. All Rights Reserved.</p>
         </div>
     </div>
 </footer>
+
 <script>
     // Mobile menu toggle
     document.getElementById('menuBtn').addEventListener('click', function() {
@@ -844,4 +805,4 @@
     });
 </script>
 </body>
-    </html>
+                        </html>
